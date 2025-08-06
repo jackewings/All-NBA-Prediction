@@ -24,6 +24,12 @@ The dataset includes player stats spanning multiple NBA seasons (2015-2024), con
 
 The final model achieved strong recall and precision, correctly identifying a high proportion of All-NBA selections while maintaining a low false positive rate. Detailed evaluation metrics and confusion matrices are presented in the `03_final_model_evaluation.ipynb` notebook.
 
+## Web App
+
+A user-friendly Streamlit web app has been deployed to allow interactive predictions. Users can input player statistics and receive a real-time prediction of All-NBA selection probability based on the trained model with optimized thresholding.
+
+Try it out here: [All-NBA Selection Predictor](https://all-nba-predictor.streamlit.app)
+
 ## Project Structure
 
 - `data/` - Raw and processed datasets  
@@ -39,3 +45,4 @@ Run the notebooks in order for a step-by-step walkthrough of the entire modeling
 ---
 
 *Created by Jack Ewings*
+
