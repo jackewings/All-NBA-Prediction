@@ -205,7 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
 
 # Directories
 anaconda_projects/
 .DS_Store
+=======
+.DS_Store
+anaconda_projects/
+>>>>>>> 91b8b40 (Clean up .DS_Store files and ignore .DS_Store and anaconda_projects folder)
