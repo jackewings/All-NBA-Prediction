@@ -32,11 +32,13 @@ Try it out here: [All-NBA Selection Predictor](https://all-nba-predictor.streaml
 
 ## Project Structure
 
-- `data/` - Raw and processed datasets  
-- `models/` - Saved trained models and threshold values  
-- `notebooks/` - Jupyter notebooks for data prep, modeling, and evaluation  
-- `src/` - Supporting scripts   
-- `requirements.txt` - Python dependencies  
+- `data/` – Contains raw and cleaned datasets used for model training and evaluation
+- `models/` – Stores serialized models and optimal threshold values
+- `notebooks/` – Jupyter notebooks for exploratory data analysis, model development, and evaluation
+- `.gitignore` – Specifies intentionally untracked files and directories to be excluded from version control
+- `README.md` – Provides a high-level overview of the project, methodology, and usage instructions
+- `app.py` – Streamlit app script for running the interactive All-NBA prediction interface
+- `requirements.txt` – Lists Python packages and dependencies required to run the project  
 
 ## How to Use
 
