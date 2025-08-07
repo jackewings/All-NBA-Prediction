@@ -13,7 +13,7 @@ The All-NBA teams celebrate the league’s top performers, but the selection pro
 ## Data Collection and Preparation  
 
 ### Data Sources  
-The dataset aggregates player statistics from NBA seasons 2015 through 2024. It includes both traditional stats (points, rebounds, assists) and advanced metrics (usage rate, effective field goal percentage, 3-point attempt rate, plus-minus ratings). The initial data was sourced from Kaggle and can be found [here](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats).
+The dataset aggregates player statistics from NBA seasons 2015 through 2024. It includes both traditional per-game stats (points, rebounds, assists) and advanced metrics (usage rate, effective field goal percentage, 3-point attempt rate, plus-minus ratings). The initial data was sourced from Kaggle and can be found [here](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats).
 
 ### Data Cleaning  
 Three raw datasets were used: end-of-season awards, per-game player statistics, and season-long advanced player stats. After loading, the data was filtered to include only seasons from 2015–2024 and players with at least 45 games played, which helped reduce the influence of statistical outliers. Per-game and advanced stats were aggregated at the player level to produce one observation per eligible player. After cleaning, the merged dataset contained 3,198 rows and 22 columns. These steps are fully documented in the `01_data_prep.ipynb` notebook.
@@ -35,12 +35,12 @@ Multiple classification models were tested to establish baseline performance: Lo
 Because All-NBA players represent a small portion of the dataset, class imbalance was a central challenge. Stratified splitting ensured balanced class representation in training and test sets. During modeling, both **class weighting** and **SMOTE (Synthetic Minority Oversampling Technique)** were tested depending on model compatibility.
 
 ### Threshold Optimization  
-Rather than using the default classification threshold of 0.5, thresholds were tuned to maximize F1-score—balancing precision and recall. This yielded better performance for this imbalanced classification task.
+Rather than using the default classification threshold of 0.5, thresholds were tuned to maximize F1-score, balancing precision and recall. This yielded better performance for this imbalanced classification task.
 
 ### Model Selection  
 Two modeling pipelines were compared, with one using SMOTE and one using class weighting. Logistic Regression emerged as the best-performing model in both.  
-- SMOTE-based logistic regression achieved an average precision of **0.899**, while  
-- Class-weighted logistic regression achieved **0.900**.
+- SMOTE-based logistic regression (C = 0.619) achieved an average precision of **0.899**  
+- Class-weighted logistic regression (C = 1.03) achieved an average precision of **0.900**.
 
 Further threshold tuning was done using cross-validation to maximize F1-score:  
 - SMOTE pipeline: **CV mean F1 = 0.833**  
