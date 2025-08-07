@@ -33,6 +33,7 @@ Try it out here: [All-NBA Selection Predictor](https://all-nba-predictor.streaml
 ## Project Structure
 
 - `data/` – Contains raw and cleaned datasets used for model training and evaluation
+- `docs/` – Contains detailed writeup for the project
 - `models/` – Stores serialized models and optimal threshold values
 - `notebooks/` – Jupyter notebooks for exploratory data analysis, model development, and evaluation
 - `.gitignore` – Specifies intentionally untracked files and directories to be excluded from version control
