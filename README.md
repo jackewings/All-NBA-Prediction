@@ -18,7 +18,7 @@ The dataset includes player stats spanning multiple NBA seasons (2015-2024), con
 - **Baseline Models:** Tried multiple classifiers (Logistic Regression, Random Forest, KNN, SVM, XGBoost) with hyperparameter tuning via randomized search.
 - **Handling Class Imbalance:** Tested class weighting and SMOTE oversampling to address the imbalance between All-NBA selections and non-selections.
 - **Threshold Optimization:** Instead of default 0.5 threshold, the decision threshold was tuned to maximize F1-score for better balance between precision and recall.
-- **Final Model:** Class-weighted Logistic Regression with a tuned threshold was selected due to its performance and efficiency.
+- **Final Model:** Class-weighted Logistic Regression (C = 1.03) with a tuned threshold of .921 was selected due to its performance and efficiency.
 
 ## Results
 
