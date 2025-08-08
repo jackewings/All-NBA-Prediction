@@ -192,7 +192,7 @@ if st.button('Predict All-NBA Probability'):
 
 st.markdown("---")
 st.markdown(
-    "👋 Connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile) | "
+    "👋 Connect with me on [LinkedIn](https://www.linkedin.com/in/jack-ewings-profile/) | "
     "[GitHub](https://github.com/jackewings)"
 )
 
