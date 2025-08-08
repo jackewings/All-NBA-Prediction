@@ -114,4 +114,6 @@ The app uses the trained logistic regression model and optimized threshold. It i
 ## Author  
 **Jack Ewings**
 
+### Connect with me
 
+[LinkedIn](https://www.linkedin.com/in/jack-ewings-profile/) | [GitHub](https://github.com/jackewings) | [Portfolio](https://jackewings.github.io)
