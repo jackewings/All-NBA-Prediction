@@ -173,12 +173,13 @@ if st.button('Predict All-NBA Probability'):
     label_text = 'All-NBA' if prediction_label == 1 else 'Not All-NBA'
 
     st.markdown(
-        f"<h3 style='color:white; font-weight:bold;'>Prediction: {label_text} {emoji}</h3>",
-        unsafe_allow_html = True
+    f"<h3 style='font-weight:bold;'>Prediction: {label_text} {emoji}</h3>",
+    unsafe_allow_html=True
     )
     st.markdown(
-        f"<h3 style='color:white; font-weight:bold;'>Probability of Making All-NBA: {prediction_proba:.2%}</h3>",
-        unsafe_allow_html = True
+    f"<h3 style='font-weight:bold;'>Probability of Making All-NBA: {prediction_proba:.2%}</h3>",
+    unsafe_allow_html=True
+
     )
     st.progress(prediction_proba)
 
