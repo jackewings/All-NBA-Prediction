@@ -59,6 +59,28 @@ feature_ranges = {
     'dbpm': (-5.0, 10.0)
 }
 
+# Customizing feature steps
+feature_steps = {
+    'age': 1.0,
+    'pts_per_game': 0.1,
+    'trb_per_game': 0.1,
+    'ast_per_game': 0.1,
+    'stl_per_game': 0.1,
+    'blk_per_game': 0.1,
+    'x2p_percent': 0.01,
+    'x3p_percent': 0.01,
+    'ft_percent': 0.01,
+    'x3p_ar': 0.01,
+    'f_tr': 0.01,
+    'usg_percent': 0.1,
+    'orb_percent': 0.1,
+    'drb_percent': 0.1,
+    'ows': 0.1,
+    'dws': 0.1,
+    'obpm': 0.1,
+    'dbpm': 0.1
+}
+
 # Mapping for intuitive display names
 feature_display_names = {
     'age': 'Age',
@@ -131,6 +153,7 @@ for feature, mean_value in feature_means.items():
                 min_value = float(min_val),
                 max_value = float(max_val),
                 value = float(default),
+                step = feature_steps.get(feature, 0.01),
                 key = f'{feature}_input'
             )
             user_inputs[feature] = user_input
