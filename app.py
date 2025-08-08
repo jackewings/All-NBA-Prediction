@@ -190,6 +190,13 @@ if st.button('Predict All-NBA Probability'):
         'Note: The prediction threshold for this model is **0.921** to adjust for class imbalance in the dataset.'
     )
 
+st.markdown("---")
+st.markdown(
+    "👋 Connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile) | "
+    "[GitHub](https://github.com/jackewings)"
+)
+
+
 
 
 

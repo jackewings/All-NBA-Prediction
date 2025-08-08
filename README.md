@@ -49,3 +49,6 @@ Run the notebooks in order for a step-by-step walkthrough of the entire modeling
 
 *Created by Jack Ewings*
 
+### Connect with me
+
+[LinkedIn](https://www.linkedin.com/in/jack-ewings-profile/) | [GitHub](https://github.com/jackewings) | [Portfolio](https://jackewings.github.io)
